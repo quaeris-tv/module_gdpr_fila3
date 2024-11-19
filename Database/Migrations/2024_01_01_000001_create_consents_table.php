@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class() extends XotBaseMigration {
     /**
      * Run the migrations.
      */
@@ -19,7 +19,7 @@ return new class extends XotBaseMigration {
                 $table->uuid('treatment_id');
                 // $table->foreignId('treatment_id')->nullable()->index();
                 $table->string('subject_id');
-                $table->timestamps();
+
                 // $table->unique(['subject_id', 'treatment_id']);
 
                 // $table->foreign('treatment_id')->references('id')->on('gdpr_treatment');
