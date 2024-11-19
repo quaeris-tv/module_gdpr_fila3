@@ -6,7 +6,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Modules\Gdpr\Models\Event;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class() extends XotBaseMigration {
     protected ?string $model_class = Event::class;
 
     /**
@@ -25,7 +25,7 @@ return new class extends XotBaseMigration {
                 $table->string('ip');
                 $table->string('action');
                 $table->text('payload');
-                $table->timestamps();
+
                 // $table->foreignId('treatment_id')->nullable();
                 /*
                 $table

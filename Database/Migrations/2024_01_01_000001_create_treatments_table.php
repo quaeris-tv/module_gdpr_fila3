@@ -5,7 +5,7 @@ declare(strict_types=1);
 use Illuminate\Database\Schema\Blueprint;
 use Modules\Xot\Database\Migrations\XotBaseMigration;
 
-return new class extends XotBaseMigration {
+return new class() extends XotBaseMigration {
     /**
      * Run the migrations.
      */
@@ -23,7 +23,6 @@ return new class extends XotBaseMigration {
                 $table->string('documentVersion')->nullable()->default(null);
                 $table->string('documentUrl')->nullable()->default(null);
                 $table->tinyInteger('weight');
-                $table->timestamps();
             }
         );
 
