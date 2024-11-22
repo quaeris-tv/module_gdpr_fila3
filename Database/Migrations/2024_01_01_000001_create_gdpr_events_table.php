@@ -25,7 +25,7 @@ return new class extends XotBaseMigration {
                 $table->string('ip');
                 $table->string('action');
                 $table->text('payload');
-                $table->timestamps();
+
                 // $table->foreignId('treatment_id')->nullable();
                 /*
                 $table
