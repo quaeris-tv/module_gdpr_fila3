@@ -8,7 +8,6 @@ use Filament\Actions;
 use Filament\Tables;
 use Filament\Tables\Table;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ConsentResource;
-use Modules\UI\Filament\Actions\Table\TableLayoutToggleTableAction;
 use Modules\Xot\Filament\Pages\XotBaseListRecords;
 
 class ListConsents extends XotBaseListRecords
@@ -33,8 +32,6 @@ class ListConsents extends XotBaseListRecords
             ->emptyStateActions([
             ]);
     }
-
-    
 
     protected function getHeaderActions(): array
     {
