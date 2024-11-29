@@ -52,7 +52,7 @@ class TreatmentResource extends XotBaseResource
             ->columns(
                 [
                     // Tables\Columns\TextColumn::make('id')
-                    //     ->label('ID')
+                    //
                     //     ->searchable(),
                     Tables\Columns\IconColumn::make('active')
                         ->boolean(),

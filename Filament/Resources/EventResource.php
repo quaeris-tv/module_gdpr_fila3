@@ -50,7 +50,7 @@ class EventResource extends XotBaseResource
     //         ->columns(
     //             [
     //                 Tables\Columns\TextColumn::make('id')
-    //                     ->label('ID')
+    //
     //                     ->searchable(),
     //                 Tables\Columns\TextColumn::make('treatment_id')
     //                     ->searchable(),

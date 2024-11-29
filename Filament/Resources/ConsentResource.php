@@ -38,7 +38,7 @@ class ConsentResource extends XotBaseResource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('id')
-                    ->label('ID')
+
                     ->searchable(),
                 Tables\Columns\TextColumn::make('treatment.name')
                     ->searchable(),
