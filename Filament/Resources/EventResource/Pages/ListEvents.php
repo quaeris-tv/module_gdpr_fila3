@@ -48,7 +48,7 @@ class ListEvents extends XotBaseListRecords
     {
         return [
             Tables\Columns\TextColumn::make('id')
-                ->label('ID')
+
                 ->searchable(),
             Tables\Columns\TextColumn::make('treatment_id')
                 ->searchable(),
