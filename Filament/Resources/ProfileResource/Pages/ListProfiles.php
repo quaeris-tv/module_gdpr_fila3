@@ -54,7 +54,7 @@ class ListProfiles extends UserListProfiles
     {
         return [
             Tables\Columns\TextColumn::make('id')
-                ->label('ID')
+
                 ->searchable(),
             Tables\Columns\TextColumn::make('type')
                 ->searchable(),
