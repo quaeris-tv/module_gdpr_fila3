@@ -27,6 +27,9 @@
     "require": {
         "statikbe/laravel-cookie-consent": "*"
     },
+    "require-dev": {
+        
+    },
     "repositories": [
         {
             "type": "path",
@@ -43,9 +46,8 @@
         }
     ],
     "scripts": {
-        "post-autoload-dump": [
-            "@php artisan vendor:publish --provider='Statikbe\\CookieConsent\\CookieConsentServiceProvider' --tag='cookie-public'",
-            "@php vendor/bin/testbench package:discover --ansi"
+        "post-autoload-dump1": [
+            "@php artisan vendor:publish --provider='Statikbe\\CookieConsent\\CookieConsentServiceProvider' --tag='cookie-public'"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate"
@@ -65,5 +67,4 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-
 }
