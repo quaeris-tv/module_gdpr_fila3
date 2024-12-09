@@ -12,7 +12,7 @@ use Modules\Gdpr\Filament\Clusters\Profile as ProfileCluster;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages;
 use Modules\Gdpr\Models\Profile;
 
-class ProfileResource extends Resource
+class ProfileResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = Profile::class;
 
