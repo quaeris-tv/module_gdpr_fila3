@@ -10,7 +10,7 @@ use Modules\Gdpr\Filament\Clusters\Profile as ProfileCluster;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ConsentResource\Pages;
 use Modules\Gdpr\Models\Consent;
 
-class ConsentResource extends Resource
+class ConsentResource extends \Modules\Xot\Filament\Resources\XotBaseResource
 {
     protected static ?string $model = Consent::class;
 
