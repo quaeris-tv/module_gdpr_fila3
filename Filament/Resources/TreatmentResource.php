@@ -46,11 +46,9 @@ class TreatmentResource extends XotBaseResource
             );
     }
 
-    public static function table(Table $table): Table
-    {
-        return $table
-            ->columns(
-                [
+
+    public function getListTableColumns():array{
+        return [
                     // Tables\Columns\TextColumn::make('id')
                     //
                     //     ->searchable(),
@@ -75,27 +73,9 @@ class TreatmentResource extends XotBaseResource
                         ->dateTime()
                         ->sortable()
                         ->toggleable(isToggledHiddenByDefault: true),
-                ]
-            )
-            ->filters([
-            ])
-            ->actions([
-                Tables\Actions\EditAction::make(),
-            ])
-            ->bulkActions([
-                Tables\Actions\BulkActionGroup::make([
-                    Tables\Actions\DeleteBulkAction::make(),
-                ]),
-            ])
-            ->emptyStateActions([
-            ]);
-    }
-
-    public static function getRelations(): array
-    {
-        return [
         ];
     }
+
 
     public static function getPages(): array
     {
