@@ -11,7 +11,7 @@ use function Safe\realpath;
 
 class GdprServiceProvider extends XotBaseServiceProvider
 {
-    public string $module_name = 'gdpr';
+    public string $name = 'gdpr';
 
     protected string $module_dir = __DIR__;
 
@@ -21,7 +21,7 @@ class GdprServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 
-        $lang_path = realpath($this->module_dir.'/../Resources/lang');
+        $lang_path = realpath($this->module_dir.'/../resources/lang');
 
         $this->loadTranslationsFrom($lang_path, 'cookie-consent');
         $router = app('router');

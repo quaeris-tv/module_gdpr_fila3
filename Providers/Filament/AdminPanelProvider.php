@@ -19,7 +19,7 @@ class AdminPanelProvider extends XotBasePanelProvider
         $panel = parent::panel($panel);
         FilamentAsset::register([
             Css::make('gdpr-styles', asset('/vendor/cookie-consent/css/cookie-consent.css')),
-            // Js::make('gdpr-scripts', __DIR__.'/../../Resources/dist/assets/app2.js'),
+            // Js::make('gdpr-scripts', __DIR__.'/../../resources/dist/assets/app2.js'),
         ], 'gdpr');
 
         return $panel;
