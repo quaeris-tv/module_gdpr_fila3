@@ -7,8 +7,6 @@ namespace Modules\Gdpr\Providers;
 use Illuminate\Routing\Router;
 use Modules\Xot\Providers\XotBaseServiceProvider;
 
-use function Safe\realpath;
-
 class GdprServiceProvider extends XotBaseServiceProvider
 {
     public string $name = 'Gdpr';
@@ -23,8 +21,6 @@ class GdprServiceProvider extends XotBaseServiceProvider
 
         $relativePath = config('modules.paths.generator.lang.path');
         $lang_path = module_path($this->name, $relativePath);
-
-
 
         $this->loadTranslationsFrom($lang_path, 'cookie-consent');
         $router = app('router');
