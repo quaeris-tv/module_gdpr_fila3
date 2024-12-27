@@ -11,7 +11,7 @@ use function Safe\realpath;
 
 class GdprServiceProvider extends XotBaseServiceProvider
 {
-    public string $name = 'gdpr';
+    public string $name = 'Gdpr';
 
     protected string $module_dir = __DIR__;
 
