@@ -71,10 +71,5 @@ class ListProfiles extends UserListProfiles
         ];
     }
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
+    
 }

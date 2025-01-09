@@ -14,12 +14,7 @@ class ListConsents extends XotBaseListRecords
 {
     protected static string $resource = ConsentResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\CreateAction::make(),
-        ];
-    }
+    
 
     public function getListTableColumns(): array
     {
