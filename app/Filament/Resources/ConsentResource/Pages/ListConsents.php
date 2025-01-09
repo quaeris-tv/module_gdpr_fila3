@@ -8,7 +8,7 @@ use Filament\Actions;
 use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\IconColumn;
 use Modules\Gdpr\Filament\Resources\ConsentResource;
-use Modules\Xot\Filament\Pages\XotBaseListRecords;
+use Modules\Xot\Filament\Resources\Pages\XotBaseListRecords;
 
 class ListConsents extends XotBaseListRecords
 {
