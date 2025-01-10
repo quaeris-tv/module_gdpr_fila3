@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Filament\Resources\EventResource\Pages;
 
-use Filament\Actions;
 use Filament\Tables;
 use Filament\Tables\Actions\DeleteBulkAction;
 use Filament\Tables\Actions\EditAction;
@@ -56,6 +55,4 @@ class ListEvents extends XotBaseListRecords
             DeleteBulkAction::make(),
         ];
     }
-
-    
 }
