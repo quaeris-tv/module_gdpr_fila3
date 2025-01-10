@@ -1,72 +1,58 @@
-<?php return array (
-  'actions' => 
-  array (
-    'create' => 
-    array (
-      'label' => 'create',
-    ),
-  ),
-  'fields' => 
-  array (
-    'id' => 
-    array (
-      'label' => 'id',
-    ),
-    'type' => 
-    array (
-      'label' => 'tipo',
-    ),
-    'first_name' => 
-    array (
-      'label' => 'Nome',
-    ),
-    'last_name' => 
-    array (
-      'label' => 'Cognome',
-    ),
-    'full_name' => 
-    array (
-      'label' => 'full_name',
-    ),
-    'email' => 
-    array (
-      'label' => 'Email',
-    ),
-    'created_at' => 
-    array (
-      'label' => 'created_at',
-    ),
-    'updated_at' => 
-    array (
-      'label' => 'updated_at',
-    ),
-    'user_id' => 
-    array (
-      'label' => 'user_id',
-    ),
-    'updated_by' => 
-    array (
-      'label' => 'updated_by',
-    ),
-    'created_by' => 
-    array (
-      'label' => 'created_by',
-    ),
-    'deleted_at' => 
-    array (
-      'label' => 'deleted_at',
-    ),
-    'deleted_by' => 
-    array (
-      'label' => 'deleted_by',
-    ),
-    'is_active' => 
-    array (
-      'label' => 'Stato account',
-    ),
-    'edit' => 
-    array (
-      'label' => 'edit',
-    ),
-  ),
-);
+<?php
+
+declare(strict_types=1);
+
+return [
+    'actions' => [
+        'create' => [
+            'label' => 'create',
+        ],
+    ],
+    'fields' => [
+        'id' => [
+            'label' => 'id',
+        ],
+        'type' => [
+            'label' => 'tipo',
+        ],
+        'first_name' => [
+            'label' => 'Nome',
+        ],
+        'last_name' => [
+            'label' => 'Cognome',
+        ],
+        'full_name' => [
+            'label' => 'full_name',
+        ],
+        'email' => [
+            'label' => 'Email',
+        ],
+        'created_at' => [
+            'label' => 'created_at',
+        ],
+        'updated_at' => [
+            'label' => 'updated_at',
+        ],
+        'user_id' => [
+            'label' => 'user_id',
+        ],
+        'updated_by' => [
+            'label' => 'updated_by',
+        ],
+        'created_by' => [
+            'label' => 'created_by',
+        ],
+        'deleted_at' => [
+            'label' => 'deleted_at',
+        ],
+        'deleted_by' => [
+            'label' => 'deleted_by',
+        ],
+        'is_active' => [
+            'label' => 'Stato account',
+        ],
+        'edit' => [
+            'label' => 'edit',
+        ],
+    ],
+];
