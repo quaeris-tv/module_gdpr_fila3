@@ -17,12 +17,11 @@ class ListProfiles extends UserListProfiles
     public function getListTableColumns(): array
     {
         return [
-            Tables\Columns\TextColumn::make('id')
-
+            'id' => Tables\Columns\TextColumn::make('id')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('type')
+            'type'=> Tables\Columns\TextColumn::make('type')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('first_name')
+            'first_name' => Tables\Columns\TextColumn::make('first_name')
                 ->searchable(),
             Tables\Columns\TextColumn::make('last_name')
                 ->searchable(),
