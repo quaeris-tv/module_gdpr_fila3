@@ -19,7 +19,7 @@ class ListProfiles extends UserListProfiles
         return [
             'id' => Tables\Columns\TextColumn::make('id')
                 ->searchable(),
-            'type'=> Tables\Columns\TextColumn::make('type')
+            'type' => Tables\Columns\TextColumn::make('type')
                 ->searchable(),
             'first_name' => Tables\Columns\TextColumn::make('first_name')
                 ->searchable(),
