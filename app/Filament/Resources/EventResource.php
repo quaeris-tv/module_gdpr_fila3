@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Gdpr\Filament\Resources;
 
 use Filament\Forms;
-use Filament\Forms\Form;
 use Modules\Gdpr\Filament\Resources\EventResource\Pages;
 use Modules\Gdpr\Models\Event;
 use Modules\Xot\Filament\Resources\XotBaseResource;
