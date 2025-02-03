@@ -4,9 +4,7 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Filament\Clusters\Profile\Resources;
 
-use Filament\Forms\Form;
-use Modules\Gdpr\Filament\Clusters\Profile as ProfileCluster;
-use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages;
+use Filament\Forms;
 use Modules\Gdpr\Models\Profile;
 use Modules\Xot\Filament\Resources\XotBaseResource;
 
@@ -16,21 +14,19 @@ class ProfileResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    protected static ?string $cluster = ProfileCluster::class;
-
-    public static function form(Form $form): Form
-    {
-        return $form
-            ->schema([
-            ]);
-    }
-
-    public static function getPages(): array
+    public static function getFormSchema(): array
     {
         return [
-            'index' => Pages\ListProfiles::route('/'),
-            'create' => Pages\CreateProfile::route('/create'),
-            'edit' => Pages\EditProfile::route('/{record}/edit'),
+            Forms\Components\TextInput::make('name')
+                ->label('Profile Name')
+                ->required(),
+            Forms\Components\TextInput::make('email')
+                ->label('Email')
+                ->email()
+                ->required(),
+            Forms\Components\TextInput::make('description')
+                ->label('Description')
+                ->nullable(),
         ];
     }
 }
