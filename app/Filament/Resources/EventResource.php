@@ -16,30 +16,27 @@ class EventResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                    Forms\Components\TextInput::make('treatment_id')
-                        ->maxLength(36)
-                        ->default(null),
-                    Forms\Components\Select::make('consent_id')
-                        ->relationship('consent', 'id'),
-                    Forms\Components\TextInput::make('subject_id')
-                        ->required()
-                        ->maxLength(191),
-                    Forms\Components\TextInput::make('ip')
-                        ->required()
-                        ->maxLength(191),
-                    Forms\Components\TextInput::make('action')
-                        ->required()
-                        ->maxLength(191),
-                    Forms\Components\Textarea::make('payload')
-                        ->required()
-                        ->columnSpanFull(),
-                ]
-            );
+        return [
+            Forms\Components\TextInput::make('treatment_id')
+                ->maxLength(36)
+                ->default(null),
+            Forms\Components\Select::make('consent_id')
+                ->relationship('consent', 'id'),
+            Forms\Components\TextInput::make('subject_id')
+                ->required()
+                ->maxLength(191),
+            Forms\Components\TextInput::make('ip')
+                ->required()
+                ->maxLength(191),
+            Forms\Components\TextInput::make('action')
+                ->required()
+                ->maxLength(191),
+            Forms\Components\Textarea::make('payload')
+                ->required()
+                ->columnSpanFull(),
+        ];
     }
 
     public static function getRelations(): array

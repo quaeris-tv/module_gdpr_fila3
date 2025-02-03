@@ -17,32 +17,29 @@ class TreatmentResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                    Forms\Components\Toggle::make('active')
-                        ->required(),
-                    Forms\Components\Toggle::make('required')
-                        ->required(),
-                    Forms\Components\TextInput::make('name')
-                        ->required()
-                        ->maxLength(191),
-                    Forms\Components\Textarea::make('description')
-                        ->required()
-                        ->columnSpanFull(),
-                    Forms\Components\TextInput::make('documentVersion')
-                        ->maxLength(191)
-                        ->default(null),
-                    Forms\Components\TextInput::make('documentUrl')
-                        ->maxLength(191)
-                        ->default(null),
-                    Forms\Components\TextInput::make('weight')
-                        ->required()
-                        ->numeric(),
-                ]
-            );
+        return [
+            Forms\Components\Toggle::make('active')
+                ->required(),
+            Forms\Components\Toggle::make('required')
+                ->required(),
+            Forms\Components\TextInput::make('name')
+                ->required()
+                ->maxLength(191),
+            Forms\Components\Textarea::make('description')
+                ->required()
+                ->columnSpanFull(),
+            Forms\Components\TextInput::make('documentVersion')
+                ->maxLength(191)
+                ->default(null),
+            Forms\Components\TextInput::make('documentUrl')
+                ->maxLength(191)
+                ->default(null),
+            Forms\Components\TextInput::make('weight')
+                ->required()
+                ->numeric(),
+        ];
     }
 
     public function getListTableColumns(): array
