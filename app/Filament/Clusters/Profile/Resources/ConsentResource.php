@@ -18,12 +18,13 @@ class ConsentResource extends XotBaseResource
 
     protected static ?string $cluster = ProfileCluster::class;
 
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema([
-            ]);
+        return [
+            
+        ];
     }
+
 
     public static function getRelations(): array
     {

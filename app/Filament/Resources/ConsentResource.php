@@ -17,19 +17,16 @@ class ConsentResource extends XotBaseResource
 
     protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
 
-    public static function form(Form $form): Form
+    public static function getFormSchema(): array
     {
-        return $form
-            ->schema(
-                [
-                    Forms\Components\Select::make('treatment_id')
-                        ->relationship('treatment', 'name')
-                        ->required(),
-                    Forms\Components\TextInput::make('subject_id')
-                        ->required()
-                        ->maxLength(191),
-                ]
-            );
+        return [
+                Forms\Components\Select::make('treatment_id')
+                    ->relationship('treatment', 'name')
+                    ->required(),
+                Forms\Components\TextInput::make('subject_id')
+                    ->required()
+                    ->maxLength(191),
+                ];
     }
 
     public function getListTableColumns(): array
