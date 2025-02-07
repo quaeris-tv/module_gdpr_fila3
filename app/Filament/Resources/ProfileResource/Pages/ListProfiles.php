@@ -14,6 +14,9 @@ class ListProfiles extends UserListProfiles
 {
     protected static string $resource = ProfileResource::class;
 
+    /**
+     * @return array<string, Tables\Columns\Column>
+     */
     public function getListTableColumns(): array
     {
         return [
@@ -23,49 +26,36 @@ class ListProfiles extends UserListProfiles
                 ->searchable(),
             'first_name' => Tables\Columns\TextColumn::make('first_name')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('last_name')
+            'last_name' => Tables\Columns\TextColumn::make('last_name')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('full_name')
+            'full_name' => Tables\Columns\TextColumn::make('full_name')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('email')
+            'email' => Tables\Columns\TextColumn::make('email')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('created_at')
+            'created_at' => Tables\Columns\TextColumn::make('created_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
-            Tables\Columns\TextColumn::make('updated_at')
+            'updated_at' => Tables\Columns\TextColumn::make('updated_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
-            Tables\Columns\TextColumn::make('user_id')
+            'user_id' => Tables\Columns\TextColumn::make('user_id')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('updated_by')
+            'updated_by' => Tables\Columns\TextColumn::make('updated_by')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('created_by')
+            'created_by' => Tables\Columns\TextColumn::make('created_by')
                 ->searchable(),
-            Tables\Columns\TextColumn::make('deleted_at')
+            'deleted_at' => Tables\Columns\TextColumn::make('deleted_at')
                 ->dateTime()
                 ->sortable()
                 ->toggleable(isToggledHiddenByDefault: true),
-            Tables\Columns\TextColumn::make('deleted_by')
+            'deleted_by' => Tables\Columns\TextColumn::make('deleted_by')
                 ->searchable(),
-            Tables\Columns\IconColumn::make('is_active')
+            'is_active' => Tables\Columns\IconColumn::make('is_active')
                 ->boolean(),
         ];
     }
 
-    public function getTableActions(): array
-    {
-        return [
-            EditAction::make()
-                ->label(''),
-        ];
-    }
-
-    public function getTableBulkActions(): array
-    {
-        return [
-            DeleteBulkAction::make(),
-        ];
-    }
+   
 }
