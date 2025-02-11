@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Modules\Gdpr\Filament\Resources;
 
 use Filament\Forms;
-use Filament\Forms\Form;
 use Filament\Tables;
 use Modules\Gdpr\Filament\Resources\ConsentResource\Pages;
 use Modules\Gdpr\Models\Consent;
@@ -20,13 +19,13 @@ class ConsentResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-                Forms\Components\Select::make('treatment_id')
-                    ->relationship('treatment', 'name')
-                    ->required(),
-                Forms\Components\TextInput::make('subject_id')
-                    ->required()
-                    ->maxLength(191),
-                ];
+            Forms\Components\Select::make('treatment_id')
+                ->relationship('treatment', 'name')
+                ->required(),
+            Forms\Components\TextInput::make('subject_id')
+                ->required()
+                ->maxLength(191),
+        ];
     }
 
     public function getListTableColumns(): array
