@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Filament\Clusters\Profile\Resources;
 
-use Filament\Forms\Form;
 use Modules\Gdpr\Filament\Clusters\Profile as ProfileCluster;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ProfileResource\Pages;
 use Modules\Gdpr\Models\Profile;
@@ -21,7 +20,6 @@ class ProfileResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            
         ];
     }
 

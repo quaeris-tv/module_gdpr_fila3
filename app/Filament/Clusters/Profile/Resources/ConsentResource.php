@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Filament\Clusters\Profile\Resources;
 
-use Filament\Forms\Form;
 use Modules\Gdpr\Filament\Clusters\Profile as ProfileCluster;
 use Modules\Gdpr\Filament\Clusters\Profile\Resources\ConsentResource\Pages;
 use Modules\Gdpr\Models\Consent;
@@ -21,10 +20,8 @@ class ConsentResource extends XotBaseResource
     public static function getFormSchema(): array
     {
         return [
-            
         ];
     }
-
 
     public static function getRelations(): array
     {
