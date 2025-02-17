@@ -1,158 +1,81 @@
-<?php
-
-declare(strict_types=1);
-
-return [
-    'navigation' => [
+<?php return array (
+    'navigation' => array (
         'name' => 'GDPR',
-        'group' => 'Privacy',
-        'sort' => 15,
-        'icon' => 'gdpr-icon',
-        'badge' => [
-            'color' => 'success',
-            'label' => 'Compliant',
-        ],
-    ],
-
-    'sections' => [
-        'consent' => [
-            'navigation' => [
-                'name' => 'Consensi',
-                'group' => 'GDPR',
-                'sort' => 10,
-                'icon' => 'gdpr-consent-icon',
-                'badge' => [
-                    'color' => 'warning',
-                    'label' => 'Da Revisionare',
-                ],
-            ],
-            'fields' => [
-                'title' => 'Titolo',
-                'description' => 'Descrizione',
-                'type' => 'Tipo',
-                'mandatory' => 'Obbligatorio',
-                'expires_at' => 'Scadenza',
-                'status' => 'Stato',
-            ],
-            'types' => [
-                'marketing' => 'Marketing',
-                'profiling' => 'Profilazione',
-                'third_party' => 'Terze Parti',
-                'technical' => 'Tecnico',
-            ],
-        ],
-
-        'treatment' => [
-            'navigation' => [
-                'name' => 'Trattamenti',
-                'group' => 'GDPR',
-                'sort' => 20,
-                'icon' => 'gdpr-treatment-icon',
-                'badge' => [
-                    'color' => 'danger',
-                    'label' => 'Da Valutare',
-                ],
-            ],
-            'fields' => [
-                'title' => 'Titolo',
-                'purpose' => 'Finalità',
-                'legal_basis' => 'Base Giuridica',
-                'retention' => 'Conservazione',
-                'categories' => 'Categorie Dati',
-                'status' => 'Stato',
-            ],
-        ],
-
-        'profile' => [
-            'navigation' => [
-                'name' => 'Profili',
-                'group' => 'GDPR',
-                'sort' => 30,
-                'icon' => 'gdpr-profile-icon',
-                'badge' => [
-                    'color' => 'info',
-                    'label' => 'Attivi',
-                ],
-            ],
-            'fields' => [
-                'name' => 'Nome',
-                'role' => 'Ruolo',
-                'permissions' => 'Permessi',
-                'active' => 'Attivo',
-            ],
-        ],
-
-        'event' => [
-            'navigation' => [
-                'name' => 'Eventi',
-                'group' => 'GDPR',
-                'sort' => 40,
-                'icon' => 'gdpr-event-icon',
-                'badge' => [
-                    'color' => 'primary',
-                    'label' => 'Log',
-                ],
-            ],
-            'fields' => [
-                'type' => 'Tipo',
-                'description' => 'Descrizione',
-                'user' => 'Utente',
-                'ip' => 'IP',
-                'date' => 'Data',
-            ],
-        ],
-    ],
-
-    'common' => [
-        'status' => [
-            'active' => 'Attivo',
-            'inactive' => 'Inattivo',
-            'pending' => 'In Attesa',
-            'expired' => 'Scaduto',
-        ],
-        'actions' => [
-            'create' => 'Crea',
-            'edit' => 'Modifica',
-            'delete' => 'Elimina',
-            'view' => 'Visualizza',
-            'export' => 'Esporta',
-            'import' => 'Importa',
-            'print' => 'Stampa',
-            'download' => 'Scarica',
-            'upload' => 'Carica',
-            'refresh' => 'Aggiorna',
-            'search' => 'Cerca',
-            'filter' => 'Filtra',
-            'sort' => 'Ordina',
-            'clear' => 'Pulisci',
-        ],
-        'messages' => [
-            'success' => [
-                'created' => 'Creato con successo',
-                'updated' => 'Aggiornato con successo',
-                'deleted' => 'Eliminato con successo',
-                'imported' => 'Importato con successo',
-                'exported' => 'Esportato con successo',
-            ],
-            'error' => [
-                'generic' => 'Si è verificato un errore',
-                'create' => 'Errore durante la creazione',
-                'update' => 'Errore durante l\'aggiornamento',
-                'delete' => 'Errore durante l\'eliminazione',
-                'import' => 'Errore durante l\'importazione',
-                'export' => 'Errore durante l\'esportazione',
-            ],
-            'confirm' => [
-                'delete' => 'Sei sicuro di voler eliminare questo elemento?',
-                'archive' => 'Sei sicuro di voler archiviare questo elemento?',
-                'restore' => 'Sei sicuro di voler ripristinare questo elemento?',
-            ],
-        ],
-        'filters' => [
-            'date_range' => 'Intervallo Date',
-            'status' => 'Stato',
-            'type' => 'Tipo',
-            'user' => 'Utente',
-        ],
-    ],
-];
+        'plural' => 'GDPR',
+        'group' => array (
+            'name' => 'Privacy',
+            'description' => 'Gestione della privacy e protezione dei dati',
+        ),
+        'label' => 'Dashboard GDPR',
+        'sort' => 79,
+        'icon' => 'gdpr-dashboard-animated',
+    ),
+    'sections' => array (
+        'dashboard' => array (
+            'title' => 'Dashboard GDPR',
+            'description' => 'Panoramica della conformità GDPR',
+            'sort' => 80,
+            'icon' => 'gdpr-dashboard-animated',
+        ),
+        'consent' => array (
+            'title' => 'Consensi',
+            'description' => 'Gestione dei consensi degli utenti',
+            'sort' => 81,
+            'icon' => 'gdpr-consent-animated',
+        ),
+        'treatment' => array (
+            'title' => 'Trattamenti',
+            'description' => 'Registro dei trattamenti dati',
+            'sort' => 82,
+            'icon' => 'gdpr-treatment-animated',
+        ),
+        'profile' => array (
+            'title' => 'Profili',
+            'description' => 'Gestione dei profili di privacy',
+            'sort' => 83,
+            'icon' => 'gdpr-profile-animated',
+        ),
+        'event' => array (
+            'title' => 'Eventi',
+            'description' => 'Registro degli eventi privacy',
+            'sort' => 84,
+            'icon' => 'gdpr-event-animated',
+        ),
+    ),
+    'widgets' => array (
+        'consent_summary' => 'Riepilogo Consensi',
+        'treatment_status' => 'Stato Trattamenti',
+        'recent_events' => 'Eventi Recenti',
+        'compliance_score' => 'Indice di Conformità',
+    ),
+    'metrics' => array (
+        'active_consents' => 'Consensi Attivi',
+        'pending_requests' => 'Richieste in Sospeso',
+        'data_breaches' => 'Violazioni Dati',
+        'compliance_level' => 'Livello Conformità',
+    ),
+    'status' => array (
+        'compliant' => 'Conforme',
+        'partially_compliant' => 'Parzialmente Conforme',
+        'non_compliant' => 'Non Conforme',
+        'needs_review' => 'Necessita Revisione',
+    ),
+    'actions' => array (
+        'export_data' => 'Esporta Dati',
+        'generate_report' => 'Genera Report',
+        'review_compliance' => 'Verifica Conformità',
+        'update_policies' => 'Aggiorna Policies',
+    ),
+    'reports' => array (
+        'compliance' => 'Report Conformità',
+        'consent' => 'Report Consensi',
+        'treatment' => 'Report Trattamenti',
+        'event' => 'Report Eventi',
+    ),
+    'notifications' => array (
+        'consent_expired' => 'Consenso Scaduto',
+        'review_needed' => 'Revisione Necessaria',
+        'breach_detected' => 'Violazione Rilevata',
+        'policy_updated' => 'Policy Aggiornata',
+    ),
+);
