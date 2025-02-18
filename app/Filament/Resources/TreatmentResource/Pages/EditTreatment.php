@@ -12,10 +12,5 @@ class EditTreatment extends EditRecord
 {
     protected static string $resource = TreatmentResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+   
 }

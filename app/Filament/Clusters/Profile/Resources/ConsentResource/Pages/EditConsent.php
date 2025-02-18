@@ -12,10 +12,5 @@ class EditConsent extends EditRecord
 {
     protected static string $resource = ConsentResource::class;
 
-    protected function getHeaderActions(): array
-    {
-        return [
-            Actions\DeleteAction::make(),
-        ];
-    }
+   
 }
