@@ -36,6 +36,10 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   whereUpdatedAt($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   whereWeight($value)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
 =======
 =======
 >>>>>>> Stashed changes
@@ -53,6 +57,10 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
  * @method static Builder|Treatment                                 whereUpdatedAt($value)
  * @method static Builder|Treatment                                 whereWeight($value)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4a1eeab7 (Lint)
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4a1eeab7 (Lint)
 >>>>>>> Stashed changes

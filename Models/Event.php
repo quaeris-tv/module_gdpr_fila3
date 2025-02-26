@@ -39,6 +39,10 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedAt($value)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
 =======
 =======
 >>>>>>> Stashed changes
@@ -55,6 +59,10 @@ use function Safe\json_encode;
  * @method static Builder|Event                                 whereTreatmentId($value)
  * @method static Builder|Event                                 whereUpdatedAt($value)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4a1eeab7 (Lint)
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4a1eeab7 (Lint)
 >>>>>>> Stashed changes
