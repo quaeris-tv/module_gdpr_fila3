@@ -13,67 +13,67 @@ use function Safe\json_encode;
 /**
  * Modules\Gdpr\Models\Event.
  *
- * @property string                          $id
- * @property string|null                     $treatment_id
- * @property string|null                     $consent_id
- * @property string                          $subject_id
- * @property string                          $ip
- * @property string                          $action
- * @property string                          $payload
+ * @property string $id
+ * @property string|null $treatment_id
+ * @property string|null $consent_id
+ * @property string $subject_id
+ * @property string $ip
+ * @property string $action
+ * @property string $payload
  * @property \Illuminate\Support\Carbon|null $created_at
  * @property \Illuminate\Support\Carbon|null $updated_at
- * @property Consent|null                    $consent
+ * @property Consent|null $consent
  *
  * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
  *                                                                                                  <<<<<<< HEAD
- * @method static \Illuminate\Database\Eloquent\Builder|Event   newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Event   newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Event   query()
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereAction($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereConsentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereIp($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   wherePayload($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereSubjectId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereTreatmentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedAt($value)
- *                                                                                                  <<<<<<< Updated upstream
- *                                                                                                  <<<<<<< Updated upstream
- *                                                                                                  <<<<<<< Updated upstream
- *                                                                                                  =======
- *                                                                                                  =======
- *                                                                                                  >>>>>>> Stashed changes
- *                                                                                                  =======
- *                                                                                                  =======
- *                                                                                                  >>>>>>> Stashed changes
- *                                                                                                  =======
- *                                                                                                  =======
- *                                                                                                  >>>>>>> Stashed changes
- * @method static Builder|Event                                 newModelQuery()
- * @method static Builder|Event                                 newQuery()
- * @method static Builder|Event                                 query()
- * @method static Builder|Event                                 whereAction($value)
- * @method static Builder|Event                                 whereConsentId($value)
- * @method static Builder|Event                                 whereCreatedAt($value)
- * @method static Builder|Event                                 whereId($value)
- * @method static Builder|Event                                 whereIp($value)
- * @method static Builder|Event                                 wherePayload($value)
- * @method static Builder|Event                                 whereSubjectId($value)
- * @method static Builder|Event                                 whereTreatmentId($value)
- * @method static Builder|Event                                 whereUpdatedAt($value)
- *                                                                                                  <<<<<<< Updated upstream
- *                                                                                                  <<<<<<< Updated upstream
- *                                                                                                  <<<<<<< Updated upstream
- *                                                                                                  =======
- *                                                                                                  >>>>>>> 4a1eeab7 (Lint)
- *                                                                                                  >>>>>>> Stashed changes
- *                                                                                                  =======
- *                                                                                                  >>>>>>> 4a1eeab7 (Lint)
- *                                                                                                  >>>>>>> Stashed changes
- *                                                                                                  =======
- *                                                                                                  >>>>>>> 4a1eeab7 (Lint)
- *                                                                                                  >>>>>>> Stashed changes
+ * @method static \Illuminate\Database\Eloquent\Builder|Event newModelQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Event newQuery()
+ * @method static \Illuminate\Database\Eloquent\Builder|Event query()
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereAction($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereConsentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereCreatedAt($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereIp($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event wherePayload($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereSubjectId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereTreatmentId($value)
+ * @method static \Illuminate\Database\Eloquent\Builder|Event whereUpdatedAt($value)
+ *                                                                                   <<<<<<< Updated upstream
+ *                                                                                   <<<<<<< Updated upstream
+ *                                                                                   <<<<<<< Updated upstream
+ *                                                                                   =======
+ *                                                                                   =======
+ *                                                                                   >>>>>>> Stashed changes
+ *                                                                                   =======
+ *                                                                                   =======
+ *                                                                                   >>>>>>> Stashed changes
+ *                                                                                   =======
+ *                                                                                   =======
+ *                                                                                   >>>>>>> Stashed changes
+ * @method static Builder|Event newModelQuery()
+ * @method static Builder|Event newQuery()
+ * @method static Builder|Event query()
+ * @method static Builder|Event whereAction($value)
+ * @method static Builder|Event whereConsentId($value)
+ * @method static Builder|Event whereCreatedAt($value)
+ * @method static Builder|Event whereId($value)
+ * @method static Builder|Event whereIp($value)
+ * @method static Builder|Event wherePayload($value)
+ * @method static Builder|Event whereSubjectId($value)
+ * @method static Builder|Event whereTreatmentId($value)
+ * @method static Builder|Event whereUpdatedAt($value)
+ *                                                     <<<<<<< Updated upstream
+ *                                                     <<<<<<< Updated upstream
+ *                                                     <<<<<<< Updated upstream
+ *                                                     =======
+ *                                                     >>>>>>> 4a1eeab7 (Lint)
+ *                                                     >>>>>>> Stashed changes
+ *                                                     =======
+ *                                                     >>>>>>> 4a1eeab7 (Lint)
+ *                                                     >>>>>>> Stashed changes
+ *                                                     =======
+ *                                                     >>>>>>> 4a1eeab7 (Lint)
+ *                                                     >>>>>>> Stashed changes
  *
  * @mixin \Eloquent
  */
