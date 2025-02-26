@@ -3,11 +3,13 @@
     "description": "",
     "homepage": "https://github.com/laraxot/module_gdpr_fila3.git",
     "license": "MIT",
-    "authors": [{
-        "name": "Marco Sottana",
-        "email": "marco.sottana@gmail.com",
-        "role": "Developer"
-    }],
+    "authors": [
+        {
+            "name": "Marco Sottana",
+            "email": "marco.sottana@gmail.com",
+            "role": "Developer"
+        }
+    ],
     "extra": {
         "laravel": {
             "providers": [
@@ -19,39 +21,15 @@
     },
     "autoload": {
         "psr-4": {
-            "Modules\\Gdpr\\": ""
+            "Modules\\Gdpr\\": "app/",
+            "Modules\\Gdpr\\Database\\Factories\\": "database/factories/",
+            "Modules\\Gdpr\\Database\\Seeders\\": "database/seeders/"
         }
     },
     "require": {
         "statikbe/laravel-cookie-consent": "*"
     },
-    "require_comment": {
-        "filament/filament": "^3.2",
-        "illuminate/contracts": "*",
-        "illuminate/support": "*",
-        "laraxot/module_xot_fila3": "dev-master",
-        "mhmiton/laravel-modules-livewire": "^2.3",
-        "thecodingmachine/safe": "^2.5"
-    },
-    "require-dev":{
-
-    },
-    "require-dev_comment": {
-        "driftingly/rector-laravel": "^0.26.2",
-        "enlightn/enlightn": "^2.7",
-        "larastan/larastan": "^2.7",
-        "laravel/pint": "^1.13",
-        "nunomaduro/collision": "^7.10",
-        "nunomaduro/phpinsights": "^2.11",
-        "orchestra/pest-plugin-testbench": "*",
-        "orchestra/testbench": "*",
-        "pestphp/pest": "^2.34",
-        "psalm/plugin-laravel": "^2.8",
-        "rector/rector": "*",
-        "symplify/phpstan-rules": "*",
-        "thecodingmachine/phpstan-safe-rule": "^1.2",
-        "vimeo/psalm": "^5.17"
-    },
+    "require-dev": {},
     "repositories": [
         {
             "type": "path",
@@ -64,12 +42,11 @@
         {
             "type": "path",
             "url": "../UI"
-
         }
     ],
     "scripts": {
-        "post-autoload-dump": [
-            "@php vendor/bin/testbench package:discover --ansi"
+        "post-autoload-dump1": [
+            "@php artisan vendor:publish --provider='Statikbe\\CookieConsent\\CookieConsentServiceProvider' --tag='cookie-public'"
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate"
@@ -89,5 +66,4 @@
     },
     "minimum-stability": "dev",
     "prefer-stable": true
-
 }
