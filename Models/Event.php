@@ -13,19 +13,19 @@ use function Safe\json_encode;
 /**
  * Modules\Gdpr\Models\Event.
  *
- * @property string                            $id
- * @property string|null                       $treatment_id
- * @property string|null                       $consent_id
- * @property string                            $subject_id
- * @property string                            $ip
- * @property string                            $action
- * @property string                            $payload
- * @property \Illuminate\Support\Carbon|null   $created_at
- * @property \Illuminate\Support\Carbon|null   $updated_at
- * @property \Modules\Gdpr\Models\Consent|null $consent
+ * @property string                          $id
+ * @property string|null                     $treatment_id
+ * @property string|null                     $consent_id
+ * @property string                          $subject_id
+ * @property string                          $ip
+ * @property string                          $action
+ * @property string                          $payload
+ * @property \Illuminate\Support\Carbon|null $created_at
+ * @property \Illuminate\Support\Carbon|null $updated_at
+ * @property Consent|null                    $consent
  *
  * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
-<<<<<<< HEAD
+ *                                                                                                  <<<<<<< HEAD
  * @method static \Illuminate\Database\Eloquent\Builder|Event   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Event   newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Event   query()
@@ -38,18 +38,18 @@ use function Safe\json_encode;
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereSubjectId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedAt($value)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
+ *                                                                                                  <<<<<<< Updated upstream
+ *                                                                                                  <<<<<<< Updated upstream
+ *                                                                                                  <<<<<<< Updated upstream
+ *                                                                                                  =======
+ *                                                                                                  =======
+ *                                                                                                  >>>>>>> Stashed changes
+ *                                                                                                  =======
+ *                                                                                                  =======
+ *                                                                                                  >>>>>>> Stashed changes
+ *                                                                                                  =======
+ *                                                                                                  =======
+ *                                                                                                  >>>>>>> Stashed changes
  * @method static Builder|Event                                 newModelQuery()
  * @method static Builder|Event                                 newQuery()
  * @method static Builder|Event                                 query()
@@ -62,18 +62,18 @@ use function Safe\json_encode;
  * @method static Builder|Event                                 whereSubjectId($value)
  * @method static Builder|Event                                 whereTreatmentId($value)
  * @method static Builder|Event                                 whereUpdatedAt($value)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
-=======
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
-=======
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
+ *                                                                                                  <<<<<<< Updated upstream
+ *                                                                                                  <<<<<<< Updated upstream
+ *                                                                                                  <<<<<<< Updated upstream
+ *                                                                                                  =======
+ *                                                                                                  >>>>>>> 4a1eeab7 (Lint)
+ *                                                                                                  >>>>>>> Stashed changes
+ *                                                                                                  =======
+ *                                                                                                  >>>>>>> 4a1eeab7 (Lint)
+ *                                                                                                  >>>>>>> Stashed changes
+ *                                                                                                  =======
+ *                                                                                                  >>>>>>> 4a1eeab7 (Lint)
+ *                                                                                                  >>>>>>> Stashed changes
  *
  * @mixin \Eloquent
  */
