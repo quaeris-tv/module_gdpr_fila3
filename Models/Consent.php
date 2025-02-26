@@ -8,10 +8,7 @@ use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
-<<<<<<< HEAD
-=======
 use Illuminate\Support\Carbon;
->>>>>>> 4a1eeab7 (Lint)
 
 /**
  * Modules\Gdpr\Models\Consent.
@@ -19,7 +16,6 @@ use Illuminate\Support\Carbon;
  * @property string                              $id
  * @property string                              $treatment_id
  * @property string                              $subject_id
-<<<<<<< Updated upstream
  * @property Carbon|null                         $created_at
  * @property Carbon|null                         $updated_at
  * @property \Modules\Gdpr\Models\Treatment|null $treatment
@@ -33,8 +29,6 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Consent                                 whereSubjectId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent                                 whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent                                 whereUpdatedAt($value)
-=======
-<<<<<<< HEAD
  * @property \Illuminate\Support\Carbon|null     $created_at
  * @property \Illuminate\Support\Carbon|null     $updated_at
  * @property \Modules\Gdpr\Models\Treatment|null $treatment
@@ -48,7 +42,6 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereSubjectId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereTreatmentId($value)
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereUpdatedAt($value)
-=======
  * @property Carbon|null                         $created_at
  * @property Carbon|null                         $updated_at
  * @property \Modules\Gdpr\Models\Treatment|null $treatment
@@ -62,8 +55,6 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Consent                                 whereSubjectId($value)
  * @method static Builder|Consent                                 whereTreatmentId($value)
  * @method static Builder|Consent                                 whereUpdatedAt($value)
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
  *
  * @mixin \Eloquent
  */
