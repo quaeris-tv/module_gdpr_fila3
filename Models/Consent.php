@@ -10,8 +10,11 @@ use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 use Illuminate\Support\Carbon;
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
 <<<<<<< HEAD
@@ -19,6 +22,9 @@ use Illuminate\Support\Carbon;
 use Illuminate\Support\Carbon;
 >>>>>>> 4a1eeab7 (Lint)
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
@@ -29,6 +35,7 @@ use Illuminate\Support\Carbon;
  * @property string                              $id
  * @property string                              $treatment_id
  * @property string                              $subject_id
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
  * @property Carbon|null                         $created_at
@@ -50,6 +57,9 @@ use Illuminate\Support\Carbon;
 =======
 <<<<<<< HEAD
 >>>>>>> Stashed changes
+=======
+<<<<<<< HEAD
+>>>>>>> Stashed changes
  * @property \Illuminate\Support\Carbon|null     $created_at
  * @property \Illuminate\Support\Carbon|null     $updated_at
  * @property \Modules\Gdpr\Models\Treatment|null $treatment
@@ -65,6 +75,10 @@ use Illuminate\Support\Carbon;
  * @method static \Illuminate\Database\Eloquent\Builder|Consent   whereUpdatedAt($value)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+=======
+>>>>>>> Stashed changes
 =======
 =======
 >>>>>>> Stashed changes
@@ -86,6 +100,10 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Consent                                 whereUpdatedAt($value)
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+>>>>>>> 4a1eeab7 (Lint)
+>>>>>>> Stashed changes
 =======
 >>>>>>> 4a1eeab7 (Lint)
 >>>>>>> Stashed changes
