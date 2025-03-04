@@ -11,16 +11,16 @@ use Illuminate\Support\Carbon;
 /**
  * Modules\Gdpr\Models\Treatment.
  *
- * @property string                          $id
- * @property int                             $active
- * @property int                             $required
- * @property string                          $name
- * @property string                          $description
- * @property string|null                     $documentVersion
- * @property string|null                     $documentUrl
- * @property int                             $weight
- * @property Carbon|null                     $created_at
- * @property Carbon|null                     $updated_at
+ * @property string      $id
+ * @property int         $active
+ * @property int         $required
+ * @property string      $name
+ * @property string      $description
+ * @property string|null $documentVersion
+ * @property string|null $documentUrl
+ * @property int         $weight
+ * @property Carbon|null $created_at
+ * @property Carbon|null $updated_at
  *
  * @method static \Modules\Gdpr\Database\Factories\TreatmentFactory factory($count = null, $state = [])
  * @method static Builder|Treatment                                 newModelQuery()
@@ -50,7 +50,7 @@ class Treatment extends BaseModel
         'description',
         'documentVersion',
         'documentUrl',
-        'weight'
+        'weight',
     ];
 
     // protected $table = 'treatment';
