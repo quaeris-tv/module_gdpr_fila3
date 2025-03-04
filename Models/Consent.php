@@ -4,20 +4,20 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Models;
 
-use Illuminate\Support\Carbon;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 
 /**
  * Modules\Gdpr\Models\Consent.
  *
- * @property string                              $id
- * @property string                              $treatment_id
- * @property string                              $subject_id
- * @property Carbon|null                         $created_at
- * @property Carbon|null                         $updated_at
- * @property \Modules\Gdpr\Models\Treatment|null $treatment
+ * @property string         $id
+ * @property string         $treatment_id
+ * @property string         $subject_id
+ * @property Carbon|null    $created_at
+ * @property Carbon|null    $updated_at
+ * @property Treatment|null $treatment
  *
  * @method static \Modules\Gdpr\Database\Factories\ConsentFactory factory($count = null, $state = [])
  * @method static Builder|Consent                                 newModelQuery()
