@@ -4,8 +4,10 @@ declare(strict_types=1);
 
 namespace Modules\Gdpr\Models;
 
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Concerns\HasUuids;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Crypt;
 
 use function Safe\json_encode;
@@ -20,36 +22,11 @@ use function Safe\json_encode;
  * @property string                            $ip
  * @property string                            $action
  * @property string                            $payload
- * @property \Illuminate\Support\Carbon|null   $created_at
- * @property \Illuminate\Support\Carbon|null   $updated_at
+ * @property Carbon|null                       $created_at
+ * @property Carbon|null                       $updated_at
  * @property \Modules\Gdpr\Models\Consent|null $consent
  *
  * @method static \Modules\Gdpr\Database\Factories\EventFactory factory($count = null, $state = [])
-<<<<<<< HEAD
- * @method static \Illuminate\Database\Eloquent\Builder|Event   newModelQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Event   newQuery()
- * @method static \Illuminate\Database\Eloquent\Builder|Event   query()
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereAction($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereConsentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereCreatedAt($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereIp($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   wherePayload($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereSubjectId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereTreatmentId($value)
- * @method static \Illuminate\Database\Eloquent\Builder|Event   whereUpdatedAt($value)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
-=======
-=======
->>>>>>> Stashed changes
  * @method static Builder|Event                                 newModelQuery()
  * @method static Builder|Event                                 newQuery()
  * @method static Builder|Event                                 query()
@@ -62,18 +39,6 @@ use function Safe\json_encode;
  * @method static Builder|Event                                 whereSubjectId($value)
  * @method static Builder|Event                                 whereTreatmentId($value)
  * @method static Builder|Event                                 whereUpdatedAt($value)
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-=======
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
-=======
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
-=======
->>>>>>> 4a1eeab7 (Lint)
->>>>>>> Stashed changes
  *
  * @mixin \Eloquent
  */
