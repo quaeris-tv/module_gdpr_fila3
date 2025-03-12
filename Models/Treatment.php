@@ -23,6 +23,7 @@ use Illuminate\Support\Carbon;
  * @property Carbon|null                     $updated_at
  *
  * @method static \Modules\Gdpr\Database\Factories\TreatmentFactory factory($count = null, $state = [])
+<<<<<<< HEAD
  * @method static Builder|Treatment                                 newModelQuery()
  * @method static Builder|Treatment                                 newQuery()
  * @method static Builder|Treatment                                 query()
@@ -36,6 +37,8 @@ use Illuminate\Support\Carbon;
  * @method static Builder|Treatment                                 whereRequired($value)
  * @method static Builder|Treatment                                 whereUpdatedAt($value)
  * @method static Builder|Treatment                                 whereWeight($value)
+=======
+>>>>>>> origin/dev
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   newModelQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   newQuery()
  * @method static \Illuminate\Database\Eloquent\Builder|Treatment   query()
