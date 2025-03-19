@@ -22,7 +22,7 @@ use Modules\User\Models\BaseProfile;
  * @property string|null                                                                                                   $full_name
  * @property string|null                                                                                                   $email
  *                                                                                                                                                    =======
- *                                                                                                                                                    >>>>>>> 76348cc6b642ef946f57e308db4e1c6210448bea
+ *                                                                                                                                                    > 76348cc6b642ef946f57e308db4e1c6210448bea
  * @property \Illuminate\Support\Carbon|null                                                                               $created_at
  * @property \Illuminate\Support\Carbon|null                                                                               $updated_at
  * @property string|null                                                                                                   $user_id
