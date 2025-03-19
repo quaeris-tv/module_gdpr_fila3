@@ -20,14 +20,10 @@ class GdprServiceProvider extends XotBaseServiceProvider
     {
         parent::boot();
 
-        //$relativePath = config('modules.paths.generator.lang.path');
-        //$lang_path = module_path($this->name, $relativePath);
         $lang_path = app(GetModulePathByGeneratorAction::class)->execute($this->name, 'lang');
-
         $this->loadTranslationsFrom($lang_path, 'cookie-consent');
+        
         $router = app('router');
-
-        // $this->app['router']->pushMiddlewareToGroup('web', \Statikbe\CookieConsent\CookieConsentMiddleware::class);
         $this->registerMyMiddleware($router);
     }
 
